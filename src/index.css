@@ -1,2 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
 @import "tailwindcss";
-@plugin "daisyui";
+
+ @plugin "daisyui" {
+   themes: light --default, dark --prefersdark, cupcake;
+ }
+
+
+@theme {
+    --font-primary: "Manrope", sans-serif;
+    --color-dark-primary: #1A1919;
+    --color-dark-secondary: #474747;
+    --color-dark-third: #757575;
+
+}
