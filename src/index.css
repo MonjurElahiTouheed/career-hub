@@ -9,9 +9,11 @@
 
 
 @theme {
+
     --font-primary: "Manrope", sans-serif;
     --color-dark-primary: #1A1919;
     --color-dark-secondary: #474747;
     --color-dark-third: #757575;
-
+    --color-gradinet-from: #7E90FE;
+    --color-gradinet-to: #9873FF;
 }
