@@ -10,11 +10,11 @@ const JobDetails = () => {
     const job = jobs.find(job => job.id === idInt);
     console.log(job)
 
-    const handleAppliedJobs = () => {
-        savedJobApplication(id)
+    const handleApplyJob = () => {
+        savedJobApplication(idInt);
         toast('Applied job successfully');
     }
-    
+
     return (
         <div>
             <h2>job details : {job.id}</h2>
@@ -25,7 +25,7 @@ const JobDetails = () => {
                     </div>
                     <div className="border-1 border-black">
                         <h2>side thigns</h2>
-                        <button onClick={handleAppliedJobs} className="btn btn-primary w-full">Apply Now</button>
+                        <button onClick={handleApplyJob} className="btn btn-primary w-full">Apply Now</button>
                     </div>
                 </div>
             </Container>

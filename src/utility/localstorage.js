@@ -1,5 +1,4 @@
 const getStoredJobApplication = () => {
-
     const storedJobApplication = localStorage.getItem('job-applied');
     if (storedJobApplication) {
         return JSON.parse(storedJobApplication);
@@ -11,14 +10,13 @@ const getStoredJobApplication = () => {
 
 const savedJobApplication = id => {
 
-    
-    const storedJobApplication = getStoredJobApplication();
-    const exist = storedJobApplication.find(jobId => jobId == id);
+    let storedJobApplications = getStoredJobApplication();
+    const exist = storedJobApplications.find(jobId => jobId == id); 
     if(!exist){
-        storedJobApplication.push(id);
-        localStorage.setItem('job-applied', JSON.stringify(storedJobApplication));
+        storedJobApplications.push(id);
+        // storedJobApplications = [...storedJobApplications, id]; this an immutable way of adding an item to an array
+        localStorage.setItem('job-applied', JSON.stringify(storedJobApplications));
     }
 }
-
 
 export { getStoredJobApplication, savedJobApplication };
