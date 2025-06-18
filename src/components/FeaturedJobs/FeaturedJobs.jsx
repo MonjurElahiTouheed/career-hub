@@ -19,7 +19,7 @@ const FeaturedJobs = () => {
 
 
     return (
-        <section className="my-[130px]">
+        <section id="jobs" className="my-[130px]">
             <Container>
                 <SectionHeading>Featured Jobs: {jobs.length}</SectionHeading>
                 <SectionDescription>Explore thousands of job opportunities with all the information you need. Its your future</SectionDescription>

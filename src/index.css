@@ -4,9 +4,10 @@
 @import "tailwindcss";
 
  @plugin "daisyui" {
-   themes: light --default, dark --prefersdark, cupcake;
+   themes: light --default, dark --prefersdark, cupcake, cyberpunk, aqua;
  }
 
+ 
 
 @theme {
 
@@ -17,3 +18,4 @@
     --color-gradinet-from: #7E90FE;
     --color-gradinet-to: #9873FF;
 }
+

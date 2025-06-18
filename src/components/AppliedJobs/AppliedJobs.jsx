@@ -51,7 +51,7 @@ const AppliedJobs = () => {
             case 'onsite':
                 return setDisplayJobs(onsiteJobs);
             default:
-                return setDisplayJobs(appliedJobs);
+                break;
         }
     }
     return (

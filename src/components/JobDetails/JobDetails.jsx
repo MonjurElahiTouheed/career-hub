@@ -16,7 +16,7 @@ const JobDetails = () => {
     }
 
     return (
-        <div>
+        <section>
             <h2>job details : {job.id}</h2>
             <Container>
                 <div className="grid md:grid-cols-4 gap-4">
@@ -30,7 +30,7 @@ const JobDetails = () => {
                 </div>
             </Container>
             <ToastContainer></ToastContainer>
-        </div>
+        </section>
     );
 };
 
